@@ -1,0 +1,41 @@
+# ساخت محیط مجازی با venv (پیشنهادی)
+python -m venv venv
+
+# ساخت محیط مجازی با virtualenv (در صورت نصب بودن)
+virtualenv venv
+
+# فعال‌سازی محیط مجازی در ویندوز
+venv\Scripts\activate
+
+# فعال‌سازی محیط مجازی در لینوکس/macOS
+source venv/bin/activate
+
+# نصب جنگو
+pip install django
+
+# ساخت پروژه جنگو
+django-admin startproject myproject
+cd myproject
+
+# ساخت اپلیکیشن
+python manage.py startapp myapp
+
+# ساخت فایل‌های مایگریشن (بر اساس مدل‌ها)
+python manage.py makemigrations
+
+# اعمال مایگریشن‌ها (روی دیتابیس)
+python manage.py migrate
+
+# اجرای سرور توسعه‌ی جنگو
+python manage.py runserver
+
+python manage.py test
+
+python manage.py shell
+
+
+pip install django-extensions
+INSTALLED_APPS = [
+    "django_extensions",
+]
+python manage.py shell_plus
