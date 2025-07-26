@@ -39,3 +39,6 @@ INSTALLED_APPS = [
     "django_extensions",
 ]
 python manage.py shell_plus
+
+
+curl.exe -X POST http://127.0.0.1:8000/ -F "key=val"
