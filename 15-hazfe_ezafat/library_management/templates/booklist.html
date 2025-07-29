@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Booklist</title>
+  </head>
+  <body>
+    <h3>Books</h3>
+    {% for b in books %}
+        {% if b.available %}
+            <div>{{b.author}} wrote {{b.title}}.</div>
+        {% else %}
+    {% endif %}
+    {% endfor %}
+  </body>
+</html>
