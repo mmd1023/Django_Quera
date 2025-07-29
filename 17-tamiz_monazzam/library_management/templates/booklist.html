@@ -21,7 +21,14 @@
     </tr>
     </thead>
     <tbody>
-        <!-- TODO -->
+        {% for b in books %}
+            <tr>
+                <td>{{b.title|title}}</td>
+                <td>{{b.author|upper}}</td>
+                <td>{{b.publication_date|date:"D d M Y"}}</td>
+                <td>{{b.text|lower|capfirst|truncatewords_html:15}}</td>
+            </tr>
+        {% endfor %}
     </tbody>
 </table>
 
