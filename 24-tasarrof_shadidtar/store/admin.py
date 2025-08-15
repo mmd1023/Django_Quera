@@ -7,6 +7,8 @@ from .models import Product
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'category', 'is_active']
     list_display_links = ['id', 'name']
+
+    list_editable = ['is_active']
     
     fieldsets = (
         ('Identification', {
@@ -17,7 +19,6 @@ class ProductAdmin(admin.ModelAdmin):
             'fields': ('category', 'company')
         }),
     )
-
 
     actions = ['make_inactive']
     @admin.action(description='Make inactive')
