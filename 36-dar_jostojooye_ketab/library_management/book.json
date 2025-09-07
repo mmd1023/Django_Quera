@@ -1,0 +1,34 @@
+[
+   {
+      "model":"library_management.book",
+      "pk":1,
+      "fields":{
+         "title":"",
+         "genre":""
+      }
+   },
+   {
+      "model":"library_management.book",
+      "pk":2,
+      "fields":{
+         "title":"ThE",
+         "genre":""
+      }
+   },
+   {
+      "model":"library_management.book",
+      "pk":3,
+      "fields":{
+         "title":"Then",
+         "genre":""
+      }
+   },
+   {
+      "model":"library_management.book",
+      "pk":4,
+      "fields":{
+         "title":"the the",
+         "genre":""
+      }
+   }
+]
