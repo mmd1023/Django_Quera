@@ -30,6 +30,8 @@ python manage.py showmigrations
 
 python manage.py sqlmigrate app_label migration_name
 
+python manage.py makemigrations --name migration_name app_ame --empty
+
 # اجرای سرور توسعه‌ی جنگو
 python manage.py runserver
 
