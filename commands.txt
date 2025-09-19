@@ -41,7 +41,21 @@ INSTALLED_APPS = [
 python manage.py shell_plus
 
 
+python manage.py createsuperuser
+
+
+
+
 curl.exe -X POST http://127.0.0.1:8000/ -F "key=val"
 
 
-python manage.py createsuperuser
+
+
+git clone <your_project_git_url>
+
+git add -A
+git commit -m 'commit massage'
+git push
+
+git tag -a submit -m 'commit massage' -f
+git push origin submit -f
